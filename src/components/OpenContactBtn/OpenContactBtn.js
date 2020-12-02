@@ -1,8 +1,9 @@
 import React from 'react'
 
-function OpenContactBtn({isContactOpen}) {
+function OpenContactBtn({openModalBtnStyles}) {
+
     return (
-        <button>
+        <button style={openModalBtnStyles}>
             Let's Talk!
         </button>
     )
