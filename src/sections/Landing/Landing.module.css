@@ -1,0 +1,63 @@
+.sectionContainer {
+    padding-right: 6.5em;
+}
+
+.contentContainer {
+    background: #F6F9FF;
+    padding: 2em 0 2em 5em;
+    height: calc(100vh - 4em);
+    border-bottom-right-radius: 200px;
+}
+
+.pseudoHeader {
+    margin-bottom: 5em;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: "Merriweather", sans-serif;
+    color: #221E41;
+    flex: 0 1 35%;
+    transform: translate(100px, -75px);
+}
+
+.nameHeader {
+    font-size: 6em;
+    margin-bottom: 0;
+    font-family: "MerriweatherUltraBold";
+}
+
+.subHeader {
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.description {
+    font-style: italic;
+    color: #757384;
+    width: 500px;
+    line-height: 2em;
+    font-size: 1.2em;
+    margin: 0 0 48px 0;
+}
+
+.textIllustrationContainer {
+    display: flex;
+}
+
+.illustration {
+    flex: 1 1 auto;
+    margin-bottom: -100px;
+    max-width: 60%;
+}
+
+.bookmark {
+    width: 80px;
+    background: #221E41;
+    height: 80px;
+    position: absolute;
+    right: 200px;
+    transform: rotate(180deg);
+    clip-path: polygon(50% 25%, 100% 0, 100% 49%, 100% 100%, 0 100%, 0 0);
+}

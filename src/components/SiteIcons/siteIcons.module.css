@@ -1,0 +1,23 @@
+.line {
+    flex: 1 1 auto;
+    border-top: 2px solid #221E41;
+    margin: 0;
+}
+
+.iconsContainer {
+    flex: 0 1 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.siteIconsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 6em;
+}
+
+.icon { 
+    max-width: 40px;
+    margin: 0 15px;
+}
