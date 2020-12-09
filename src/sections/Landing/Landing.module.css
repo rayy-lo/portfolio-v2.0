@@ -25,7 +25,7 @@
 .nameHeader {
     font-size: 6em;
     margin-bottom: 0;
-    font-family: "MerriweatherUltraBold";
+    font-family: "MerriweatherUltraBold", "Merriweather", sans-serif;
 }
 
 .subHeader {
