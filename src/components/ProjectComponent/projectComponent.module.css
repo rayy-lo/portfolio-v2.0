@@ -1,0 +1,50 @@
+.projectContainer {
+    display: flex;
+    font-family: "Merriweather", sans-serif;
+    background: white;
+    margin-bottom: 5em;
+    justify-content: space-between;
+}
+
+.projectContainer:last-child {
+    margin-bottom: 0;
+}
+
+.projectText {
+    max-width: 450px;
+}
+
+.projectImage {
+    border-radius: 50px;
+    height: 350px;
+    width: 500px;
+}
+
+.projectType {
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.projectName {
+    margin: 0.5em 0 1em;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.projectDescription {
+    line-height: 2em;
+    position: relative;
+
+}
+
+.GitHubRepo {
+    filter: brightness(0) saturate(100%);
+    font-size: 0.5em;
+    max-width: 35px;
+    float: right;
+    margin-right: 20px;
+}
+
+.imageWrapper {
+    position: relative;
+}
