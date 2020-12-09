@@ -1,0 +1,30 @@
+.wrapper {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    top: -20px;
+    right: 15px;
+    flex-direction: row-reverse;
+    border: 1px solid rgb(225, 75, 75);
+    padding: 10px;
+    background: #FFF3F3;
+    border-radius: 10px;
+}
+
+.icons {
+    height: 25px;
+    width: 25px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.liquidIcon {
+    height: 25px;
+    width: 70px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.iconTooltip {
+    display: none;
+}
