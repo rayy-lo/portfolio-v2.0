@@ -1,0 +1,38 @@
+.footer {
+    height: 100%;
+    background: #221E41;
+    color: white;
+    border-top-left-radius: 100px;
+    padding-bottom: 1em;
+    font-family: "Merriweather", sans-serif;
+    overflow-x: hidden;
+}
+
+.textWrapper {
+    display: flex;
+    padding: 2em 6em 2em;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+}
+
+.header {
+    font-family: "MerriweatherUltraBold", "Merriweather", sans-serif;
+    font-size: 3em;
+    margin-bottom: 60px;
+    line-height: 1.3em;
+}
+
+.subheader {
+    font-size: 1em;
+}
+
+.copyright {
+    display: block;
+    margin: 0.5em 0 0.5em 5em;
+}
+
+.squareIcon {
+    height: 40px;
+    position: absolute;
+}
