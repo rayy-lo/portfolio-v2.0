@@ -1,6 +1,5 @@
 .line {
     flex: 1 1 auto;
-    border-top: 1px solid #221E41;
     margin: 0 0 0 -5em;
 }
 
@@ -14,7 +13,6 @@
     display: flex;
     justify-content: space-between;
     align-items:center;
-    margin-top: 6em;
 }
 
 .icon { 
