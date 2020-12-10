@@ -12,12 +12,12 @@ function Landing() {
         color: '#221E41',
         width: '250px',
         padding: '0.75em 0',
-        borderRadius: '20px',
+        borderRadius: '10px',
         background: '#FFAFAF',
         border: '1px solid #E14B4B',
         fontWeight: 700
     };
-
+    
     return (
         <section className={sectionContainer}>
             <div className={bookmark}></div>
@@ -42,7 +42,7 @@ function Landing() {
                         Landing Illustration
                     </object>
                 </div>
-                <SiteIcons />
+                <SiteIcons marginTop='6em' lineColor='#221E41' />
             </div>
         </section>
     )
