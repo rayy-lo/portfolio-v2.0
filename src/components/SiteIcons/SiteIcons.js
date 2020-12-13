@@ -12,13 +12,13 @@ function SiteIcons({lineColor, marginTop, iconColor}) {
         <div style={{marginTop: marginTop}} className={siteIconsContainer}>
             <hr style={{color: lineColor }} className={line}></hr>
             <div className={iconsContainer}>
-                <a href="https://github.com/rayy-lo">
+                <a href="https://github.com/rayy-lo" aria-label="Go to GitHub profile" >
                     <img style={{filter: iconColor}} className={icon} src={GitHubIcon} alt="GitHub icon" />
                 </a>
-                <a href="https://www.linkedin.com/in/raymond-lo-323b1b178/">       
+                <a aria-label="Go to LinkedIn profile" href="https://www.linkedin.com/in/raymond-lo-323b1b178/">       
                     <img style={{filter: iconColor}} className={icon} src={LinkedInIcon} alt="LinkedIn icon" />
                 </a>
-                <a href="" download>
+                <a target="_blank" aria-label="Download resume" href="" download>
                     <img style={{filter: iconColor}} className={icon} src={FileIcon} alt="Resume file icon" />
                 </a>
             </div>
