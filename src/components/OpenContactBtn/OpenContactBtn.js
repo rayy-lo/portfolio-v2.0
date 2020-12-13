@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import styles from './OpenContactBtn.module.css';
 
-function OpenContactBtn({openModalBtnStyles}) {
+function OpenContactBtn({openModalBtnStyles, toggleModal}) {
 
     return (
-        <button style={openModalBtnStyles}>
+        <button className={styles.button} onClick={toggleModal} style={openModalBtnStyles}>
             Let's Talk!
         </button>
     )

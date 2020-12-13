@@ -16,7 +16,7 @@ function Project() {
             componentProps.order = -1
         }
 
-        return <ProjectComponent {...componentProps} />;
+        return <ProjectComponent key={project.id} {...componentProps} />;
     })
 
     return (

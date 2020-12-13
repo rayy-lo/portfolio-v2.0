@@ -12,9 +12,9 @@ function ProjectTech({tech}) {
         }
         // return React.createElement('img', {className: elementAttributes.className, src: tech.icon, alt: `${tech.name} icon`});
         return (
-            <div className={iconWrapper}>
+            <div key={tech.name} className={iconWrapper}>
                 <div className={iconTooltip}>{tech.name}</div>
-                <img className={elementAttributes.className} src={tech.icon} alt={`${tech.name} icon`}/>
+                <img title={tech.name} className={elementAttributes.className} src={tech.icon} alt={`${tech.name} icon`}/>
             </div>
         )
     })

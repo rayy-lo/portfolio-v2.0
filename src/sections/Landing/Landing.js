@@ -5,15 +5,15 @@ import OpenContactBtn from '../../components/OpenContactBtn/OpenContactBtn';
 import SiteIcons from '../../components/SiteIcons/SiteIcons';
 import Illustration from '../../../static/Landing-illustration.svg';
 
-function Landing() {
+function Landing({toggleModal}) {
     const { bookmark, illustration, textIllustrationContainer, pseudoHeader, sectionContainer,contentContainer, infoContainer, nameHeader,subHeader, description} = landingStyles;
     // custom styles for open modal button component
     const openModalBtnStyles = {
-        color: '#221E41',
+        color: 'rgb(217, 59, 59)',
         width: '250px',
         padding: '0.75em 0',
         borderRadius: '10px',
-        background: '#FFAFAF',
+        background: '#FFF3F3',
         border: '1px solid #E14B4B',
         fontWeight: 700
     };
@@ -23,9 +23,7 @@ function Landing() {
             <div className={bookmark}></div>
             <div className={contentContainer}>
                 <div className={pseudoHeader}>
-                    <object data={logo} type="image/svg+xml">
-                    Raymond's Logo
-                    </object>
+                    <img tabIndex="-1" src={logo} alt="Raymond's Logo" />
                 </div>
                 <div className={textIllustrationContainer}>
                     <div className={infoContainer}>
@@ -36,11 +34,9 @@ function Landing() {
                         </h1>
                         <h2 className={subHeader}>Front-End Developer</h2>
                         <p className={description}>Building beautiful web-based user interfaces is my passion. Develop and implement quality code is my mission.</p>
-                        <OpenContactBtn openModalBtnStyles={openModalBtnStyles} />
+                        <OpenContactBtn toggleModal={toggleModal} openModalBtnStyles={openModalBtnStyles} />
                     </div>
-                    <object className={illustration} data={Illustration} type="image/svg+xml">
-                        Landing Illustration
-                    </object>
+                    <img tabIndex="-1" className={illustration} src={Illustration} alt="Drawing of small person thinkign and sitting beside large laptop"/>
                 </div>
                 <SiteIcons marginTop='6em' lineColor='#221E41' />
             </div>
