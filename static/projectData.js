@@ -1,4 +1,4 @@
-import CalendappImage from '../static/projectImages/Calendapp.jpg'
+import CalendappImage from '../static/projectImages/Calendapp.svg'
 import ShopifyIcon from '../static/projectImages/Shopify.svg';
 import HTML5Icon from '../static/icons/html.svg';
 import JavaScriptIcon from '../static/icons/javascript.svg';
