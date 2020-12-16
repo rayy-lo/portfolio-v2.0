@@ -5,7 +5,7 @@ import OpenContactBtn from '../../components/OpenContactBtn/OpenContactBtn';
 import SquaresSVG from '../../../static/icons/pinkSquares.svg';
 
 function Footer({toggleModal}) {
-    const {footer, squareIcon, textWrapper, header, copyright, subheader} = styles;
+    const {footer, squareIcon, textWrapper, header, copyright, subheader, headerWrapper} = styles;
     const date = new Date();
     const year = date.getFullYear();
 
@@ -24,7 +24,7 @@ function Footer({toggleModal}) {
     return (
         <footer className={footer}>
             <div className={textWrapper}>
-                <div>
+                <div className={headerWrapper}>
                     <h1 className={header}>Interested in <br />working together?</h1>
                     <span className={subheader}>Send me an email and let's get started!</span>
                 </div>
@@ -32,7 +32,6 @@ function Footer({toggleModal}) {
                 <img src={SquaresSVG} alt="" style={{transform: 'translate(-700px, 0) rotate(90deg)'}} className={squareIcon} />
                 <img src={SquaresSVG} alt="" style={{transform: 'translate(-800px, -100px) rotate(180deg)'}} className={squareIcon} />
                 <img src={SquaresSVG} alt="" style={{transform: 'translate(0px, 0) rotate(45deg)'}} className={squareIcon} />
-                <img src={SquaresSVG} alt="" style={{transform: 'translate(-60px, -150px)'}} className={squareIcon} />
                 <img src={SquaresSVG} alt="" style={{transform: 'translate(200px, -100px)'}} className={squareIcon} />
                 <img src={SquaresSVG} alt="" style={{transform: 'translate(450px, -160px) rotate(300deg)'}} className={squareIcon} />
                 <img src={SquaresSVG} alt="" style={{transform: 'translate(650px, -100px)'}} className={squareIcon} />

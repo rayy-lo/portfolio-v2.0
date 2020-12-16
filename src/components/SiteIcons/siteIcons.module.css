@@ -19,3 +19,20 @@
     max-width: 40px;
     margin: 0 15px;
 }
+
+@media (max-width: 600px) {
+    .line {
+        display: none;
+    }
+
+    .siteIconsContainer {
+        justify-content: center;
+        margin: 0 !important;
+    }
+}
+
+@media (min-width: 320px) {
+    .icon {
+        max-width: 35px;
+    }
+}

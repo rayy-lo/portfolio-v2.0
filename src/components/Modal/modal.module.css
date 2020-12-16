@@ -43,3 +43,9 @@
     z-index: -1;
     margin: -2em;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .modalContent {
+        width: 75%;
+    }
+}

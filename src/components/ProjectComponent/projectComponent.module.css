@@ -12,6 +12,7 @@
 
 .projectText {
     max-width: 450px;
+    position: relative;
 }
 
 .projectImage {
@@ -41,10 +42,74 @@
     filter: brightness(0) saturate(100%);
     font-size: 0.5em;
     max-width: 35px;
-    float: right;
-    margin-right: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
 }
 
 .imageWrapper {
     position: relative;
+}
+
+@media (max-width: 1080px) {
+    .projectText {
+        margin-left: 2em;
+    }
+}
+
+@media (max-width: 900px) {
+    .projectContainer {
+        flex-direction: column;
+        width: 500px;
+        margin: 0 auto 3em;
+    }
+
+    .projectImage {
+        order: -1;
+        width: 100%;
+    }
+
+    .projectText {
+        order: 1;
+        width: 100%;
+        max-width: none;
+        margin: 2em 0 0 0;
+    }
+
+    .projectName, .projectType {
+        text-align: center;
+    }
+
+    .projectType {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    .projectContainer {
+        width: 350px;
+        margin: 0 auto 2em;
+    }
+    
+    .projectName {
+        margin: 0.5em 1em;
+    }
+
+    .projectText {
+        margin: 1em 0 0 0;
+    }
+
+    .projectDescription {
+        text-align: center;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .projectContainer {
+        width: 300px;
+    }
+
+    .projectImage {
+        height: 225px;
+    }
 }
