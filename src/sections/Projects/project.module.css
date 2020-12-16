@@ -26,3 +26,24 @@
     color: #FFAFAF;
     top: 10px;
 }
+
+@media (max-width: 1080px) {
+    .container {
+        max-width: 850px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        margin: 2.5em auto;
+    }
+
+    .headerWrapper {
+        margin-bottom: 2.5em;
+    }
+
+    .header {
+        font-size: 2em;
+        margin: 0;
+    }
+}

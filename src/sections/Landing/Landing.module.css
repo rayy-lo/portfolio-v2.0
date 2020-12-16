@@ -4,8 +4,8 @@
 
 .contentContainer {
     background: #F6F9FF;
-    padding: 2em 0 2em 5em;
-    height: calc(100vh - 4em);
+    padding: 2em 2em 5em;
+    height: 100%;
     border-bottom-right-radius: 200px;
 }
 
@@ -19,7 +19,7 @@
     font-family: "Merriweather", sans-serif;
     color: #221E41;
     flex: 0 1 35%;
-    transform: translate(100px, -75px);
+    transform: translate(3em, -75px);
 }
 
 .nameHeader {
@@ -44,12 +44,18 @@
 
 .textIllustrationContainer {
     display: flex;
+    justify-content: space-around;
+    margin: 0 0 2em 0;
 }
 
 .illustration {
     flex: 1 1 auto;
     margin-bottom: -100px;
     max-width: 60%;
+}
+
+.illustration:focus {
+    outline: none;
 }
 
 .bookmark {
@@ -60,4 +66,83 @@
     right: 200px;
     transform: rotate(180deg);
     clip-path: polygon(50% 25%, 100% 0, 100% 49%, 100% 100%, 0 100%, 0 0);
+}
+
+@media (max-width: 1350px ) {
+    .textIllustrationContainer {
+        justify-content: space-between;
+    }
+
+    .illustration {
+        width: 45%;
+        transform: translate(-40px, 0px);
+    }
+
+    .sectionContainer {
+        padding-right: 0;
+    }
+
+}
+
+@media (max-width: 1080px) {
+    .illustration {
+        display: none;
+    }
+
+    .contentContainer {
+        border-bottom-right-radius: 0;
+        padding: 2em;
+    }
+
+    .bookmark {
+        right: 50px;
+    }
+
+    .infoContainer {
+        transform: none;
+    }
+
+    .textIllustrationContainer {
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .nameHeader {
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .infoContainer {
+        width: 100%;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .bookmark {
+        right: 40px;
+    }
+
+    .nameHeader {
+        font-size: 5em;
+    }
+
+    .infoContainer {
+        flex: 0 1 auto;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .textIllustrationContainer {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 459px) {
+    .textIllustrationContainer {
+        font-size: 11px;
+    }
 }
