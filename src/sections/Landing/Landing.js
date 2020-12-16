@@ -38,7 +38,7 @@ function Landing({toggleModal}) {
                     </div>
                     <img tabIndex="-1" className={illustration} src={Illustration} alt="Drawing of small person thinkign and sitting beside large laptop"/>
                 </div>
-                <SiteIcons marginTop='6em' lineColor='#221E41' />
+                <SiteIcons lineColor='#221E41' />
             </div>
         </section>
     )
