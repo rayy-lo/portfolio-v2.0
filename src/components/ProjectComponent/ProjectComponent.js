@@ -15,10 +15,10 @@ function ProjectComponent({data, order}) {
                 <h1 className={projectName}>{data.info.name}</h1>
                 <p className={projectDescription}>{data.info.description}</p>
                 {checkRepo}
+                <ProjectTech tech={data.tech} />
             </div>
             <div className={imageWrapper} style={{order}}>
-                <img alt={data.info.name + 'project image'} src={data.image} className={projectImage} />
-                <ProjectTech tech={data.tech} />
+                <img style={data.info.name === "P3 Media" ? {background: '#F0FBEE'} : {}} alt={data.info.name + ' project image'} src={data.image} className={projectImage} />
             </div>
         </div>
     )
