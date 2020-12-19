@@ -6,14 +6,5 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [
-    {
-      resolve: `gatsby-plugin-s3`,
-      options: {
-        bucketName: "raymondlo.io",
-        protocol: "https",
-        hostname: "www.raymondlo.io",
-      },
-    },
-  ],
+  plugins: []
 }
