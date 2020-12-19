@@ -17,6 +17,7 @@
   "dependencies": {
     "fontsource-merriweather": "^3.0.9",
     "gatsby": "^2.26.1",
+    "gatsby-cli": "^2.16.1",
     "gatsby-plugin-s3": "^0.3.8",
     "normalize.css": "^8.0.1",
     "react": "^16.12.0",
