@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './OpenContactBtn.module.css';
+import styles from './openContactBtn.module.css';
 
 function OpenContactBtn({openModalBtnStyles, toggleModal}) {
 
