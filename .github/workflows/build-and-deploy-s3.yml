@@ -34,5 +34,5 @@ jobs:
       - name: Deploy
         uses: jonelantha/gatsby-s3-action@v1
         with:
-          dest-s3-bucket: arn:aws:s3:::www.raymondlo.io
+          dest-s3-bucket: www.raymondlo.io
           cloudfront-id-to-invalidate: EHIVD3HZJE51W      
