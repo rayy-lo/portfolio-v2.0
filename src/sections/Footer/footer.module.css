@@ -1,10 +1,10 @@
 .footer {
     height: 100%;
-    background: #221E41;
+    background: #221e41;
     color: white;
     border-top-left-radius: 100px;
     padding-bottom: 1em;
-    font-family: "Merriweather", sans-serif;
+    font-family: 'Merriweather', sans-serif;
     overflow-x: hidden;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .header {
-    font-family: "MerriweatherUltraBold", "Merriweather", sans-serif;
+    font-family: 'MerriweatherUltraBold', 'Merriweather', sans-serif;
     font-size: 3em;
     margin-bottom: 60px;
     line-height: 1.3em;
@@ -33,8 +33,10 @@
 }
 
 .squareIcon {
-    height: 40px;
+    height: 51px;
     position: absolute;
+    background: url('../../../static/icons/pinkSquares.svg') no-repeat;
+    width: 65px;
 }
 
 @media (max-width: 1080px) {
