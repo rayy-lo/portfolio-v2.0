@@ -4,9 +4,9 @@ import GitHubIcon from '../../../static/icons/GitHub-icon.svg';
 import ProjectTech from '../ProjectTech/ProjectTech';
 
 function ProjectComponent({data, order}) {
-    const {projectImage, imageWrapper, projectContainer, projectDescription, projectText, projectName, projectType, GitHubRepo} = componentStyles;
+    const {projectImage, imageWrapper, GitHubRepoLink, projectContainer, projectDescription, projectText, projectName, projectType, GitHubRepo} = componentStyles;
     //create GitHub element for project if available
-    const checkRepo = data.repo.length > 0 ? <a href={data.repo}><img className={GitHubRepo} alt={data.info.name + ' GitHub repo'} src={GitHubIcon} /></a> : null; 
+    const checkRepo = data.repo.length > 0 ? <a class={GitHubRepoLink} href={data.repo}><img className={GitHubRepo} alt={data.info.name + ' GitHub repo'} src={GitHubIcon} /></a> : null; 
 
     return (
         <div className={projectContainer}>
