@@ -5,7 +5,7 @@ import FileIcon from '../../../static/icons/file-icon.svg';
 import LinkedInIcon from '../../../static/icons/LinkedIn-icon.svg';
 import Resume from '../../../static/Raymond_Lo_Resume_PDF.pdf';
 
-function SiteIcons({ lineColor, marginTop, iconColor }) {
+function SiteIcons({ lineColor, marginTop, iconColor, isFocusable }) {
     const { line, icon, iconsContainer, siteIconsContainer } = siteIconStyles;
 
     return (
@@ -15,6 +15,7 @@ function SiteIcons({ lineColor, marginTop, iconColor }) {
                 <a
                     href="https://github.com/rayy-lo"
                     aria-label="Go to GitHub profile"
+                    tabIndex={isFocusable ? 0 : -1}
                 >
                     <img
                         style={{ filter: iconColor }}
@@ -26,6 +27,7 @@ function SiteIcons({ lineColor, marginTop, iconColor }) {
                 <a
                     aria-label="Go to LinkedIn profile"
                     href="https://www.linkedin.com/in/raymond-lo-323b1b178/"
+                    tabIndex={isFocusable ? 0 : -1}
                 >
                     <img
                         style={{ filter: iconColor }}
@@ -38,6 +40,7 @@ function SiteIcons({ lineColor, marginTop, iconColor }) {
                     target="_blank"
                     aria-label="Download resume"
                     href={Resume}
+                    tabIndex={isFocusable ? 0 : -1}
                     download
                 >
                     <img

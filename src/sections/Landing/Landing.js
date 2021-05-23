@@ -23,7 +23,7 @@ function Landing({toggleModal}) {
             <div className={bookmark}></div>
             <div className={contentContainer}>
                 <div className={pseudoHeader}>
-                    <img tabIndex="-1" src={logo} alt="Raymond's Logo" />
+                    <img src={logo} alt="Raymond's Logo" />
                 </div>
                 <div className={textIllustrationContainer}>
                     <div className={infoContainer}>
@@ -34,11 +34,11 @@ function Landing({toggleModal}) {
                         </h1>
                         <h2 className={subHeader}>Front-End Developer</h2>
                         <p className={description}>Building beautiful web-based user interfaces is my passion. Develop and implement quality code is my mission.</p>
-                        <OpenContactBtn toggleModal={toggleModal} openModalBtnStyles={openModalBtnStyles} />
+                        <OpenContactBtn isFocusable={true} toggleModal={toggleModal} openModalBtnStyles={openModalBtnStyles} />
                     </div>
-                    <img tabIndex="-1" className={illustration} src={Illustration} alt="Drawing of small person thinkign and sitting beside large laptop"/>
+                    <img className={illustration} src={Illustration} alt=""/>
                 </div>
-                <SiteIcons lineColor='#221E41' />
+                <SiteIcons isFocusable={true} lineColor='#221E41' />
             </div>
         </section>
     )

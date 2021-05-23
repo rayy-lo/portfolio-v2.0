@@ -42,6 +42,7 @@ function Footer({ toggleModal }) {
                     </span>
                 </div>
                 <OpenContactBtn
+                    isFocusable={false}
                     toggleModal={toggleModal}
                     openModalBtnStyles={openModalBtnStyles}
                 />
@@ -95,6 +96,7 @@ function Footer({ toggleModal }) {
                 />
             </div>
             <SiteIcons
+                isFocusable={false}
                 lineColor="white"
                 marginTop="1em"
                 iconColor={cssFilterValueForWhite}
