@@ -3,7 +3,7 @@ import styles from './footer.module.css';
 import SiteIcons from '../../components/SiteIcons/SiteIcons';
 import OpenContactBtn from '../../components/OpenContactBtn/OpenContactBtn';
 
-function Footer({ toggleModal }) {
+function Footer({ showModal }) {
     const {
         footer,
         squareIcon,
@@ -43,7 +43,7 @@ function Footer({ toggleModal }) {
                 </div>
                 <OpenContactBtn
                     isFocusable={false}
-                    toggleModal={toggleModal}
+                    showModal={showModal}
                     openModalBtnStyles={openModalBtnStyles}
                 />
                 <div
