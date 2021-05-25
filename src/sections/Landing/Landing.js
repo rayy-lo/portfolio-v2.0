@@ -5,9 +5,9 @@ import OpenContactBtn from '../../components/OpenContactBtn/OpenContactBtn';
 import SiteIcons from '../../components/SiteIcons/SiteIcons';
 import Illustration from '../../../static/Landing-illustration.svg';
 
-function Landing({toggleModal}) {
+function Landing({showModal}) {
     const { bookmark, illustration, textIllustrationContainer, pseudoHeader, sectionContainer,contentContainer, infoContainer, nameHeader,subHeader, description} = landingStyles;
-    // custom styles for open modal button component
+
     const openModalBtnStyles = {
         color: 'rgb(217, 59, 59)',
         width: '250px',
@@ -34,7 +34,7 @@ function Landing({toggleModal}) {
                         </h1>
                         <h2 className={subHeader}>Front-End Developer</h2>
                         <p className={description}>Building beautiful web-based user interfaces is my passion. Develop and implement quality code is my mission.</p>
-                        <OpenContactBtn isFocusable={true} toggleModal={toggleModal} openModalBtnStyles={openModalBtnStyles} />
+                        <OpenContactBtn isFocusable={true} showModal={showModal} openModalBtnStyles={openModalBtnStyles} />
                     </div>
                     <img className={illustration} src={Illustration} alt=""/>
                 </div>
