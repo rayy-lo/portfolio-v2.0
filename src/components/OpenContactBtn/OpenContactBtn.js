@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './openContactBtn.module.css';
 
-function OpenContactBtn({ openModalBtnStyles, toggleModal, isFocusable }) {
+function OpenContactBtn({ openModalBtnStyles, showModal, isFocusable }) {
     return (
         <button
             tabIndex={isFocusable ? 0 : -1}
             className={styles.button}
-            onClick={toggleModal}
+            onClick={showModal}
             style={openModalBtnStyles}
         >
             Let's Talk!
