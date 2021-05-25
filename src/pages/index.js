@@ -15,7 +15,6 @@ export default function Home() {
 
     function showModal() {
         setModal(true);
-        console.log('focus');
         setTimeout(() => {
             ref.current.focus();
         }, 1);
